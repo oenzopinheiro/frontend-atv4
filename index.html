@@ -12,138 +12,145 @@
             <img src="/Assets/OBJECTS.svg" alt="LOGO THE YEAH CODE" class="logo">
         </a>
     </header>
+    <main>
     <div class="vector">
         <div class="objectsofvector">
-        <p class="text1">Calculadora Freelancer</p>
+        <h1 class="text1">Calculadora Freelancer</h1>
         <p class="text2">Você sabe quanto vale a sua hora de trabalho?</p>
-        <div class="button">
-            <button class="button1">Valor/hora</button>
-            <button class="button2">Valor/projeto</button>
+        <div class="div-button">
+        <a href="#grid-all-up"><button class="button">Valor/hora</button></a>
+            <a href="#grid-all-down"><button class="button">Valor/projeto</button></a>
         </div>
         </div>
        <img src="/Assets/Group 1.svg" alt="PERSONS OF VECTOR" class="group">
     </div>
-<div class="gridDown">
-  
-    <p class="text3">Calcule o seu valor/hora!</p>
-    <div class="textofinput">
-   
-    
-</div>
-<div class="inputs2">
-    <span class="text12">Quanto você quer ganhar por mês?</span>
-    <span class="text13">Quantos dias você quer trabalhar por semana?</span>
-        <div class="div-input-pai">
-            <input type="number" class="input1"> 
-            <div class="div-filho">
-               <br>
-                <span class="span">Horas por dia</span>
-            </div>
 
-        </div>
-        <div class="div-input-pai">
-            <input type="number" class="input1">
-            <div class="div-filho">
-              <br>
-                <span class="span">Semanas por ano</span>
-                
-                
-        </div>
-    </div>
-    </div>
-<div class="inputs2">
-    <span class="text12">Quantas horas você quer trabalhar por dia?</span>
-    <span class="text13">Quantas semanas por ano você quer tirar de férias?</span>
-        <div class="div-input-pai">
-            <input type="number" class="input1"> 
-            <div class="div-filho">
-               <br>
-                <span class="span">Horas por dia</span>
-            </div>
+    <section class="conteiner">
+        <div>
+            <h2 class="text3">Calcule o seu valor/hora!</h2>
 
-        </div>
-        <div class="div-input-pai">
-            <input type="number" class="input1">
-            <div class="div-filho">
-              <br>
-                <span class="span">Semanas por ano</span>
-                
-                
-                <div class="div-result">
+            <div class="content_cal">
+                <div class="inputs"  id="grid-all-up">
+                    <div>
+                        <span class="teextupinput">Quanto você quer ganhar por mês?</span>
+
+                        <div class="input">
+                            <input type="number" class="allinputs" id="inputOne">
+                            <div  class="div-input">
+                                <span>Quantidade por mês</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="teextupinput">Quantos dias você quer trabalhar por semana?</span>
+
+                        <div class="input">
+                            <input type="number" class="allinputs"  id="inputTwo">
+                            <div  class="div-input" >
+                                <span>Dias por semana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="teextupinput">Quantas horas você quer trabalhar por dia?</span>
+
+                        <div class="input">
+                            <input type="number" class="allinputs"  id="inputThree">
+                            <div  class="div-input">
+                                <span>Horas por dia</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="card">
+                    <div class="textup">
                     <span class="text4">O seu novo valor por hora</span>
-                    <span class="text5">R$ 21,00/hora</span>
+                    <div class="texts-text5">
+                        <span class="text5">R$</span>  <span class="text5" id="text5">0</span> <span class="text5">/hora</span>
+                </div>
+                </div>
                     <div class="othertexts">
                     <span class="text6">Salário Bruto</span>
-                    <span class="text7">R$ 3.000,00</span>
-                    <span class="text8">Carga horária semanal</span>
-                    <span class="text9">R$ 40 horas</span>
-                    </div>
-                    
+                    <span class="text7">R$  <span id="text7">0</span></span> 
                 </div>
-            </div> 
-            
-        
-        </div>
-        <a href="#"><button class="button4">calcular</button></a>
-    </div>
-    <span class="text14">Quer calcular o valor de um projeto?</span>
-
-    <div class="textofinput">
-        <span class="text100">Quanto você ganha por hora?</span>
-        <span class="text11">Quantos dias você quer trabalhar por semana?</span>
-    </div>
-        <div class="inputs11">
-            <div class="div-input-pai">
-            <input type="number" class="input1"> 
-            <div class="div-filho">
-         <br>
-                <span class="span">Seu valor/hora</span>
-            </div>
-            
-        </div>
-        
-        <div class="div-input-pai">
-            <input type="number" class="input1"> 
-            <div class="div-filho">
-                <br>
-                <span class="span">Horas por dia</span>
+                    <div class="othertexts">
+                    <span class="text8" id="text8" >Carga horária semanal</span>
+                    <span class="text9" id="text9">0 <span class="text9">horas</span></span> 
+                </div>
             </div>
         </div>
-        </div>
-    <div class="inputs22">
-        <span class="text122">Quantos dias irá durar o projeto?</span>
+      <button onclick="calculate()" class="button1">Calcular</button>
+        <div id="grid-all-down">
+            <h2 class="text3">Quer calcular o valor de um projeto?</h2>
 
-            <div class="div-input-pai">
-                <input type="number" class="input1"> 
-                <div class="div-filho">
-                   <br>
-                    <span class="span">Dia</span>
+            <div class="content_cal">
+                <div class="inputs">
+                    <div>
+                        <span class="teextupinput">Quanto você ganha por hora?</span>
 
-                    <div class="div-result1">
-                        <span class="text44">Valor total do projeto</span>
-                        <span class="text55">R$ 10.560,00</span>
-                        <div class="othertexts1">
-                        <span class="text66">Seu valor/hora</span>
-                        <span class="text7">R$ 22,00</span>
-                        <span class="text8">Horas por dia</span>
-                        <span class="text9">8 horas</span>
+                        <div class="input">
+                            <input type="number" class="allinputs"  id="inputFive">
+                            <div  class="div-input">
+                                <span>Seu valor/hora</span>
+                            </div>
                         </div>
+                    </div>
+
+                    <div>
+                        <span class="teextupinput">Quantas horas irá trabalhar no projeto por dia?</span>
+
+                        <div class="input">
+                            <input type="number" class="allinputs"  id="inputSix">
+                            <div  class="div-input">
+                                <span>Horas por dia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="teextupinput">Quantos dias irá durar o projeto?</span>
+
+                        <div class="input">
+                            <input type="number" class="allinputs"  id="inputSeven">
+                            <div  class="div-input">
+                                <span>Dias</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                    
-         
-              
-                </div> 
-                
+                <div class="card">
+                    <div class="textup">
+                    <span class="text4">Valor total do projeto</span>
+                    <div class="texts-text5">
+                        <span class="text5">R$</span>  <span class="text5" id="text55">0</span> <span class="text5">,00</span>
+                </div>
+                </div>
+                    <div class="othertexts">
+                    <span class="text6">Seu valor/hora</span>
+                   <span class="text7">R$  <span class="text7" id="text10">22,00</span></span>
+                    </div>
+                    <div class="othertexts">
+                    <span class="text8">Horas por dia</span>
+                    <span class="text9" id="text11">8 <span class="text9">horas</span> </span> 
+                </div>
             </div>
-            <a href="#"><button class="button3">calcular</button></a>
         </div>
+    <button onclick="calculate1()" class="button1">Calcular</button>
+    </section>
+</main>
+
 
     <footer class="container1">
-<a href="#"><img src="/Assets/Logo.svg" alt="LOGO FINAL YEAH CODE" class="logo"></a>
+<a href="#"><img src="/Assets/LOGO.svg" alt="LOGO FINAL YEAH CODE" class="logo"></a>
     </footer>
 
    
 </div>
-
+<script src="/script.js"></script>
 </body>
 </html>
