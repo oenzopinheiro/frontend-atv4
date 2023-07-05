@@ -20,7 +20,7 @@ let call5 = 0
 function calculate(){
 
 
-    call = Math.floor( Number(inputOne.value)  / Number(inputTwo.value) / Number(inputThree.value) ) 
+    call = Math.floor( Number(inputOne.value) / 4 / Number(inputTwo.value) / Number(inputThree.value) ) 
     callElement.innerHTML = call
     call2 = Number(inputOne.value)
     call2Element.innerHTML = call2
@@ -30,7 +30,7 @@ function calculate(){
 } function calculate1(){
  call1 = Math.floor( Number(inputFive.value)  * Number(inputSix.value) * Number(inputSeven.value) ) 
  call1Element.innerHTML = call1
- call4 = Number(inputFive.value)
+ call4 = Number(inputFive.value)                           
  call4Element.innerHTML = call4
  call5 = Number(inputSix.value)
  call5Element.innerHTML = call5
